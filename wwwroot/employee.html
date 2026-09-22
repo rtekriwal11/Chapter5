@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <form method="post" action="./Employee/PayAmount">
+        Enter Employee name:
+        <input type="text" name="name" />
+        <br />
+        Enter Employee rate:
+        <input type="text" name="rate" />
+        <br />
+        Enter Employee hours:
+        <input type="text" name="hours" />
+        <br />
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>
