@@ -1,4 +1,4 @@
-using Chapter2MVC.Models;
+/*using Chapter2MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chapter2MVC.Controllers
@@ -70,3 +70,4 @@ namespace Chapter2MVC.Controllers
         }
     }
 }
+*/
