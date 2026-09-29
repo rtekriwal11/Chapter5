@@ -6,18 +6,18 @@
 </head>
 <body>
 <p>
-    <a asp-controller="Student" asp-action="AddCourse">
-        Add a new course
-    </a>
+<a asp-controller="Student" asp-action="AddCourse">
+Add a new course
+</a>
 </p>
 <h3>Available Course List</h3>
 <ol>
-    @{
-        foreach (string course in ViewData["Courses"] as List<string>)
-        {
-            <li>@course</li>
-        }
-    }
+@{
+foreach (string course in ViewData["Courses"] as List<string>)
+{
+<li>@course</li>
+}
+}
 </ol>
 </body>
 </html>

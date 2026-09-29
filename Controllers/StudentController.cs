@@ -1,12 +1,28 @@
+using Chapter2MVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Chapter2MVC.Controllers
 {
     public class StudentController : Controller
     {
-
+        static List<Student> allStudents = new List<Student>();
         static List<string> allCourses = new List<string> { "Java", "C#", "Agile" };
 
+        public IActionResult AllStudent()
+        {
+            return View(allStudents);
+        }
+        public IActionResult AddStudent()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        public IActionResult AddStudent(Student student)
+        {
+            allStudents.Add(student);
+            return RedirectToAction("AllStudent");
+        }
         //IActionResult is used whenever the return type is View()
         public IActionResult Course()
         {

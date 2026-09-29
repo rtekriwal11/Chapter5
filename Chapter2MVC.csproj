@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Content Update="wwwroot\employee.html">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>employee.cs</LastGenOutput>

@@ -1,0 +1,33 @@
+@model List<Chapter2MVC.Models.Student>
+<p>
+<a asp-controller="Student" asp-action="AddStudent">
+    Add a new student
+</a>
+</p>
+<h3>All Students List</h3>
+@{
+if (Model.Count < 1)
+{
+    <p>No student yet.</p>
+}
+else
+{
+    <table border="1">
+        <tr>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>GPA</th>
+        </tr>
+        @{
+            foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.StudentId</td>
+                    <td>@student.StudentName</td>
+                    <td>@student.GPA</td>
+                </tr>
+            }
+        }
+    </table>
+}
+}
