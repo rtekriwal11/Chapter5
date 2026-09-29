@@ -2,7 +2,7 @@ var builder = WebApplication.CreateBuilder(args);
 // Add MVC services
 builder.Services.AddControllersWithViews();
 var app = builder.Build();
-// Enable static files from wwwroot
+// Enable  static files from wwwroot
 app.UseStaticFiles();
 // Enable routing
 app.UseRouting();

@@ -6,7 +6,7 @@
 </head>
 <body>
     <form method="post" action="./Student/CheckRealGrade">
-        Enter student name:
+        Enter student  name:
         <input type="text" name="name" />
         <br />
         Enter student score:

@@ -23,7 +23,7 @@ namespace Chapter2MVC.Controllers
             allStudents.Add(student);
             return RedirectToAction("AllStudent");
         }
-        //IActionResult is used whenever the return type is View()
+        //IActionResult  is used whenever the return type is View()
         public IActionResult Course()
         {
             //allCourses--> Courses

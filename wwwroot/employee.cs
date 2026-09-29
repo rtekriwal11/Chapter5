@@ -12,7 +12,7 @@
         Enter Employee rate:
         <input type="text" name="rate" />
         <br />
-        Enter Employee hours:
+        Enter Employee  hours:
         <input type="text" name="hours" />
         <br />
         <input type="submit" value="Submit" />
