@@ -10,7 +10,7 @@ public class MyLibraryController : Controller
     //IActionResult is used whenever the return type is View()
     public IActionResult Book()
     {
-        ViewData["Books"]= allBooks;
+        ViewData["Books"]=allBooks;
         return View();
     }
     public IActionResult AddBook()
